@@ -1,4 +1,5 @@
 position_mode = center
+font = Ubuntu, 13
 columns = 6
 menu_width = 1200
 menu_height_min = 800
