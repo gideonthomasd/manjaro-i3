@@ -1,5 +1,13 @@
 #!/bin/bash
 
+####Install yay##############################
+sudo pacman -S --needed base-devel git
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ..
+#############################################
+
 sudo pacman -S openbox obconf tint2 obmenu-generator feh jgmenu lxappearance lxtask gtk2-perl appimagelauncher lxsession pcmanfm xfce4-terminal conky rofi ttf-ubuntu-font-family geany picom
 
 tar -xzvf obmenugenerator.tar.gz
