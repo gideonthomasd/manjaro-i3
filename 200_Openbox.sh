@@ -35,6 +35,6 @@ cp log.sh ~/log.sh
 
 
 yay -S nerd-fonts-mononoki
-obmenu-generator -p -i
+obmenu-generator -p 
 
 
