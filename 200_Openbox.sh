@@ -1,14 +1,14 @@
 #!/bin/bash
 
 ####Install yay##############################
-sudo pacman -S --needed base-devel git
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-cd ..
+#sudo pacman -S --needed base-devel git
+#git clone https://aur.archlinux.org/yay.git
+#cd yay
+#makepkg -si
+#cd ..
 #############################################
 
-sudo pacman -S openbox obconf tint2 obmenu-generator feh jgmenu lxappearance lxtask gtk2-perl appimagelauncher lxsession pcmanfm xfce4-terminal conky rofi ttf-ubuntu-font-family geany picom
+sudo pacman -S openbox obconf tint2 obmenu-generator feh jgmenu lxappearance lxtask gtk2-perl appimagelauncher lxsession pcmanfm xfce4-terminal conky rofi ttf-ubuntu-font-family geany picom yay neofetch
 
 tar -xzvf obmenugenerator.tar.gz
 mkdir -p ~/.config/obmenu-generator
@@ -43,6 +43,9 @@ cp log.sh ~/log.sh
 
 
 yay -S nerd-fonts-mononoki
+yay -S dracula-icons-git
+yay -S dracula-gtk-theme
+
 obmenu-generator -p 
 
 
