@@ -12,6 +12,7 @@ mkdir -p ~/.config/conky
 cp sysinfo_mbcolor.conkyrc ~/.config/conky
 
 cd tint2
+chmod +x *.sh
 cd scripts
 chmod +x volumettf
 cd ..
