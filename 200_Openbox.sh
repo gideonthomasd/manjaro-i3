@@ -16,6 +16,11 @@ cd tint2
 cp -r * ~/.config/tint2
 cd ..
 
+mkdir -p ~/.config/openbox
+cd openbox
+cp -r * ~/.config/openbox
+cd ..
+
 mkdir -p ~/.config/jgmenu
 cp jgmenurc ~/.config/jgmenu
 
