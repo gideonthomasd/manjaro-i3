@@ -7,3 +7,6 @@ pkill msm_notifier
 pkill applet.py
 killall xdg-desktop-portal-gnome
 killall goa-daemon
+killall xfce4-power-manager
+killall light-locker
+
