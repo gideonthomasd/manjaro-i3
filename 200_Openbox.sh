@@ -8,7 +8,7 @@
 #cd ..
 #############################################
 
-sudo pacman -S openbox obconf tint2 obmenu-generator feh jgmenu lxappearance lxtask gtk2-perl appimagelauncher lxsession pcmanfm xfce4-terminal conky rofi ttf-ubuntu-font-family geany picom yay neofetch yt-dlp
+sudo pacman -S openbox obconf tint2 obmenu-generator feh jgmenu lxappearance lxtask gtk2-perl appimagelauncher lxsession pcmanfm xfce4-terminal conky rofi ttf-ubuntu-font-family geany picom yay neofetch yt-dlp brave-browser
 
 tar -xzvf obmenugenerator.tar.gz
 mkdir -p ~/.config/obmenu-generator
