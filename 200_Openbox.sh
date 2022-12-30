@@ -33,6 +33,7 @@ cd ..
 
 mkdir -p ~/.config/openbox
 cd openbox
+chmod +x *.sh
 cp -r * ~/.config/openbox
 cd ..
 
