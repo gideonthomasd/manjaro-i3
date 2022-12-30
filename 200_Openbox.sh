@@ -40,6 +40,7 @@ mkdir -p ~/.config/jgmenu
 cp jgmenurc ~/.config/jgmenu
 
 cp log.sh ~/log.sh
+cp bashrc ~/.bashrc
 
 
 yay -S nerd-fonts-mononoki
