@@ -72,7 +72,7 @@ $alignr disk ${color0}${fs_used /} - ${fs_size /}
 $alignr$color memory ${color0}$legacymem - $memmax
 #${alignr}${color0}${font Cantarell:size=9}swap $swapmax - $swap
 #
-${voffset 10}$alignr${color} Mabox Linux ${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "} /CODENAME/ {print $2}' /etc/lsb-release}
+${voffset 10}$alignr${color} Linux ${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "} /CODENAME/ {print $2}' /etc/lsb-release}
 $alignr${execi 10000 whoami}@${nodename}
 ${alignr}${color0}uptime ${color}${uptime_short}
 ${alignr}${color0}${alignr}kernel ${color}${kernel}
@@ -81,5 +81,6 @@ ${alignr}${color0}${alignr}filesystem ${color}${fs_type}${voffset 10}
 ${alignr}${color}${execpi 1800 checkupdates.sh -s}${font}${color}
 ${alignr}${color} installed pkgs: ${color0}${execi 10000 pacman -Q | wc -l}
 ${alignr}${color} branch: ${color0}${execi 10000 pacman-mirrors -G}
+${alignr}${color} Weather: ${color0}${execpi 900 curl wttr.in/Caerphilly?format="%l+%C+%f" 2>/dev/null | cut -d' ' -f2-}
 ${voffset -50}
 ]];
