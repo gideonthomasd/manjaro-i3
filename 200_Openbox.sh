@@ -45,6 +45,12 @@ cp jgmenurc ~/.config/jgmenu
 cp log.sh ~/log.sh
 cp bashrc ~/.bashrc
 
+mkdir -p ~/.themes
+tar -xzvf themes.tar.gz
+cd themes
+cp -r * ~/.themes
+cd ..
+
 
 yay -S nerd-fonts-mononoki
 yay -S dracula-icons-git
