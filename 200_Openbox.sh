@@ -46,7 +46,7 @@ cp log.sh ~/log.sh
 cp bashrc ~/.bashrc
 
 mkdir -p ~/.themes
-tar -xzvf themes.tar.gz
+tar -xzvf theme.tar.gz
 cd themes
 cp -r * ~/.themes
 cd ..
