@@ -14,7 +14,7 @@ conky.config = {
 	minimum_width = '200',
 
 	use_xft = true,
-	font = 'Ubuntu Mono:size=13',
+	font = 'mononoki nerd font mono:size=13',
 	xftalpha = 1,
 	override_utf8_locale = true,
     
@@ -82,5 +82,7 @@ ${alignr}${color}${execpi 1800 checkupdates.sh -s}${font}${color}
 ${alignr}${color} installed pkgs: ${color0}${execi 10000 pacman -Q | wc -l}
 ${alignr}${color} branch: ${color0}${execi 10000 pacman-mirrors -G}
 ${alignr}${color} Weather: ${color0}${execpi 900 curl wttr.in/Caerphilly?format="%l+%C+%f" 2>/dev/null | cut -d' ' -f2-}
+
+${alignr}${execpi 1 ~/.config/tint2/scripts/audacious-conky.sh 0 30}
 ${voffset -50}
 ]];
