@@ -28,7 +28,7 @@ function join_maxlen_func {
 	# 2 strings - $1 y $2 - no pasar $maxlen de caracteres
     # pero la primera cuerda debe acortarse, no la 2da.
 	dots=""
-	[ ${#1} -gt $((maxlen - ${#2})) ] && dots="..."
+	[ ${#1} -gt $((maxlen - ${#2})) ] && dots=".."
 	echo "${1:0:((maxlen - ${#dots} - ${#2}))}$dots $2"
 }
 
@@ -71,12 +71,12 @@ then
 	case "$status" in
 		"playing") 
 		#echo ""
-		lines_func " $(join_maxlen_func "$infostring" "$(otherinfo_func)")"
+		lines_func "$(join_maxlen_func "$infostring" "$(otherinfo_func)")"
 		exit_only_me
 		;;
 		"paused") 
 		#echo ""
-		lines_func " $(join_maxlen_func "$infostring" "$(otherinfo_func)")"
+		lines_func "$(join_maxlen_func "$infostring" "$(otherinfo_func)")"
 		exit_only_me
 		;;
 	esac
