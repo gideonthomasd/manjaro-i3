@@ -25,6 +25,7 @@ cd tint2
 chmod +x *.sh
 cd scripts
 chmod +x volumettf
+chmod +x *.sh
 cd ..
 cd ..
 
