@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Adapta-Nokto-Maia</name>
+    <name>Joy</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -179,9 +179,13 @@
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Keybindings for desktop switching -->
-    
     <keybind key="W-1">
       <action name="GoToDesktop">
+        <to>1</to>
+      </action>
+    </keybind>
+    <keybind key="W-S-1">
+      <action name="SendToDesktop">
         <to>1</to>
       </action>
     </keybind>
@@ -190,8 +194,18 @@
         <to>2</to>
       </action>
     </keybind>
+    <keybind key="W-S-2">
+      <action name="SendToDesktop">
+        <to>2</to>
+      </action>
+    </keybind>
     <keybind key="W-3">
       <action name="GoToDesktop">
+        <to>3</to>
+      </action>
+    </keybind>
+    <keybind key="W-S-3">
+      <action name="SendToDesktop">
         <to>3</to>
       </action>
     </keybind>
@@ -200,18 +214,24 @@
         <to>4</to>
       </action>
     </keybind>
+    <keybind key="W-S-4">
+      <action name="SendToDesktop">
+        <to>4</to>
+      </action>
+    </keybind>
+    
     <keybind key="W-w">
       <action name="Close"/>
     </keybind>
     <keybind key="W-Return">
       <action name="Execute">
-		  <command>xfce4-terminal</command>
-	  </action>
+        <command>xfce4-terminal</command>
+      </action>
     </keybind>
     <keybind key="F12">
       <action name="Execute">
-		  <command>pcmanfm</command>
-	  </action>
+        <command>pcmanfm</command>
+      </action>
     </keybind>
     <keybind key="W-F1">
       <action name="Execute">
@@ -238,7 +258,16 @@
         <command>brave</command>
       </action>
     </keybind>
-    
+    <keybind key="W-k">
+      <action name="Execute">
+        <command>~/.config/openbox/kill2.sh</command>
+      </action>
+    </keybind>
+    <keybind key="W-F5">
+      <action name="Execute">
+        <command>blueman-applet</command>
+      </action>
+    </keybind>
     <keybind key="C-A-Left">
       <action name="GoToDesktop">
         <to>left</to>
@@ -287,7 +316,6 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
