@@ -5,7 +5,7 @@ picom &
 #plank &
 conky -c ~/.config/conky/sysinfo_mbcolor.conkyrc &
 #~/.config/openbox/wallpaper.sh &
-~/.config/zentile_linux_amd64
+~/.config/zentile_linux_amd64 &
 ~/.config/openbox/kill.sh &
 
 lxappearance &
