@@ -21,6 +21,19 @@ cd ..
 mkdir -p ~/.config/conky
 cp sysinfo_mbcolor.conkyrc ~/.config/conky
 
+###Rofi ########################
+mkdir -p ~/.config/rofi
+
+cd rofi
+cd launchers
+cd colorful
+chmod +x *.sh
+cd ..
+cd ..
+cd ..
+
+################################
+
 cd tint2
 chmod +x *.sh
 cd scripts
@@ -50,6 +63,10 @@ mkdir -p ~/.themes
 tar -xzvf theme.tar.gz
 cd themes
 cp -r * ~/.themes
+cd ..
+
+cd rofi
+cp -r * ~/.config/rofi
 cd ..
 
 
