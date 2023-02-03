@@ -69,8 +69,8 @@ cd rofi
 cp -r * ~/.config/rofi
 cd ..
 
-
-yay -S nerd-fonts-mononoki
+sudo pacman -S ttf-mononoki-nerd
+#yay -S nerd-fonts-mononoki
 yay -S dracula-icons-git
 yay -S dracula-gtk-theme
 
