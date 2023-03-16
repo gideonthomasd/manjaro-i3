@@ -1,10 +1,14 @@
 #!/bin/bash
 
-sudo pacman -S bspwm sxhkd polybar lxterminal pulsemixer
+sudo pacman -S bspwm sxhkd lxterminal pulsemixer make
+sudo pacman -S pycharm-community-edition remmina freerdp
+sudo pacman -S libreoffice-fresh
+sudo pacman -S cutefish-screenlocker
+yay -S scid stockfish
 
 mkdir -p ~/.config/sxhkd
 mkdir -p ~/.config/bspwm
-mkdir -p ~/.config/polybar
+#mkdir -p ~/.config/polybar
 #mkdir -p ~/.config/rofi
 
 #cd rofi
@@ -16,9 +20,6 @@ mkdir -p ~/.config/polybar
 #cd ..
 
 
-cd polybar
-chmod +x *.sh
-cd ..
 
 cd bspwm
 chmod +x bspwmrc
@@ -32,9 +33,7 @@ cd sxhkd
 cp -r * ~/.config/sxhkd
 cd ..
 
-cd polybar
-cp -r * ~/.config/polybar
-cd ..
+cp schema.pl ~/.config/obmenu-generator/schema.pl
 
 #cd rofi
 #cp -r * ~/.config/rofi

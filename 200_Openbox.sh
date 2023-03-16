@@ -8,7 +8,7 @@
 #cd ..
 #############################################
 
-sudo pacman -S openbox obconf tint2 obmenu-generator feh jgmenu lxappearance lxtask gtk2-perl appimagelauncher lxsession pcmanfm xfce4-terminal conky rofi ttf-ubuntu-font-family geany picom yay neofetch yt-dlp brave-browser parcellite audacious
+sudo pacman -S openbox obconf tint2 obmenu-generator feh jgmenu lxappearance lxtask gtk2-perl appimagelauncher lxsession pcmanfm xfce4-terminal conky rofi ttf-ubuntu-font-family geany picom yay neofetch yt-dlp alacritty dmenu brave-browser parcellite audacious
 
 sudo pacman -R xfce4-clipman-plugin
 
@@ -33,6 +33,11 @@ cd ..
 cd ..
 
 ################################
+
+mkdir -p ~/.config/alacritty
+cd alacritty
+cp -r * ~/.config/alacritty
+cd ..
 
 cd tint2
 chmod +x *.sh

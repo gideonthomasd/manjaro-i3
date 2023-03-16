@@ -19,7 +19,7 @@ case $chosen in
 		#i3-msg exit;;
 		pkill dwm || pkill i3 || pkill bspwm || pkill openbox || pkill herbstluftwm || pkill awesome || pkill qtile || pkill python;;
     $option1)
-        i3lock-fancy;;
+        cutefish-screenlocker;;
     $option2)
         systemctl suspend;;
 	$option3)

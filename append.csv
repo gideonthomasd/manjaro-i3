@@ -1,0 +1,7 @@
+^sep()
+Lock,cutefish-screenlocker,system-lock-screen
+Exit,^checkout(exit),system-shutdown
+^tag(exit)
+Logout,pkill bspwm || pkill openbox,system-log-out
+Reboot,systemctl -i reboot,system-reboot
+Poweroff, systemctl -i poweroff,system-shutdown

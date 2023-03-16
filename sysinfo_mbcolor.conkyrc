@@ -14,7 +14,7 @@ conky.config = {
 	minimum_width = '200',
 
 	use_xft = true,
-	font = 'mononoki nerd font mono:size=13',
+	font = 'DejaVu Sans Mono:size=10',
 	xftalpha = 1,
 	override_utf8_locale = true,
     
