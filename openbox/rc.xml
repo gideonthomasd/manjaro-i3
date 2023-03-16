@@ -225,7 +225,12 @@
     </keybind>
     <keybind key="W-Return">
       <action name="Execute">
-        <command>xfce4-terminal</command>
+        <command>alacritty</command>
+      </action>
+    </keybind>
+    <keybind key="W-p">
+      <action name="Execute">
+        <command>dmenu_run -fn "Noto Sans Regular-16" -sb "#990000" -sf "#FFFF66" -p "Run: "</command>
       </action>
     </keybind>
     <keybind key="F12">
