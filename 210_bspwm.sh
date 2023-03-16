@@ -23,6 +23,7 @@ mkdir -p ~/.config/bspwm
 
 cd bspwm
 chmod +x bspwmrc
+chmod +x *.sh
 cd ..
 
 cd bspwm
